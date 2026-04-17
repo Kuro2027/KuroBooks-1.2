@@ -1,0 +1,153 @@
+/* ---------------------------------------------------
+   🌸 KuroBooks — Estilo Pastel Kawaii
+   --------------------------------------------------- */
+
+/* Fuente kawaii */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, #ffe6f7, #e8d9ff);
+    color: #5a4a66;
+    transition: 0.3s ease;
+}
+
+/* Contenedores generales */
+.contenedor, .login-contenedor, .registro-contenedor, .card {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 40px auto;
+    border: 3px solid #ffb3e6;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #c77fd6;
+    text-shadow: 0 0 8px rgba(200, 150, 255, 0.4);
+}
+
+/* Inputs */
+input, textarea, select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 2px solid #d8a7ff;
+    background: #fff;
+    font-size: 15px;
+}
+
+/* Botones */
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ffb3e6, #ff99cc);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 153, 204, 0.4);
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff99d6, #ff7fcf);
+}
+
+/* Enlaces */
+a {
+    color: #ff7fcf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 6px #ffb3e6;
+}
+
+/* Tarjetas de libros */
+.card {
+    max-width: 500px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Barra superior kawaii */
+.topbar {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 200, 240, 0.7);
+    border-bottom: 3px solid #ffb3e6;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(6px);
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background: linear-gradient(135deg, #2a2233, #1a1620);
+    color: #f0d9ff;
+}
+
+.dark-mode .contenedor,
+.dark-mode .login-contenedor,
+.dark-mode .registro-contenedor,
+.dark-mode .card {
+    background: rgba(40, 30, 55, 0.7);
+    border-color: #a86bd6;
+    box-shadow: 0 10px 25px rgba(80, 50, 120, 0.5);
+}
+
+.dark-mode input {
+    background: #3a2a4d;
+    color: #f0d9ff;
+    border-color: #b46cff;
+}
+
+.dark-mode button {
+    background: linear-gradient(135deg, #b46cff, #8f4fd6);
+}
+
+.dark-mode a {
+    color: #d8a7ff;
+}
+
+.welcome-contenedor {
+    max-width: 600px;
+    margin: 80px auto;
+    background: rgba(255, 240, 250, 0.85);
+    padding: 40px;
+    border-radius: 25px;
+    border: 3px solid #ffb3e6;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+    text-align: center;
+}
+
+.titulo-kawaii {
+    font-size: 32px;
+    color: #c77fd6;
+    text-shadow: 0 0 10px rgba(200, 150, 255, 0.5);
+}
+
+.botones-welcome {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-secundario {
+    background: linear-gradient(135deg, #d8a7ff, #c77fd6);
+}
