@@ -185,3 +185,30 @@ a:hover {
     transform: translateX(-50%);
     background: white;
 }
+.lista-libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.libro-card {
+    width: 150px;
+    background: rgba(255, 240, 250, 0.8);
+    border: 3px solid #ffb3e6;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.libro-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.libro-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.6);
+}
