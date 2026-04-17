@@ -7,9 +7,12 @@
 </head>
 <body>
 
-<div class="login-contenedor">
+<div class="login-contenedor avatar-box">
+
+    <img src="https://i.imgur.com/8QfQZ5K.png" class="avatar" alt="Avatar kawaii">
+
     <h1>💖 Iniciar Sesión 💖</h1>
-    <p class="subtitulo">Accede a tu mundo mágico en KuroBooks</p>
+    <p class="subtitulo">Bienvenido de nuevo a KuroBooks</p>
 
     <form onsubmit="return login()">
         <label for="usuario">Usuario</label>
@@ -37,7 +40,7 @@ function login() {
 
     if (user === userGuardado && pass === passGuardada) {
         localStorage.setItem("logeado", "true");
-        window.location.href = "inicio.html"; // Página después de iniciar sesión
+        window.location.href = "inicio.html";
         return false;
     } else {
         alert("Usuario o contraseña incorrectos 💔");
