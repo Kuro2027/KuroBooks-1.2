@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leer Libro ✨</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1 id="tituloLibro"></h1>
+    <p>Aquí irá el contenido del libro…</p>
+</div>
+
+<script>
+window.onload = function() {
+    let libros = JSON.parse(localStorage.getItem("libros")) || [];
+    let id = localStorage.getItem("libroActual");
+
+    if (libros[id]) {
+        document.getElementById("tituloLibro").innerText = libros[id].titulo;
+    }
+};
+</script>
+
+</body>
+</html>
