@@ -39,3 +39,38 @@
 
     <button type="submit">💖 Registrarse 💖</button>
 </form>
+<script>
+function registrar() {
+    const user = document.getElementById("usuario").value;
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+    const pass2 = document.getElementById("password2").value;
+    const avatarFile = document.getElementById("avatar").files[0];
+
+    if (pass !== pass2) {
+        alert("Las contraseñas no coinciden 💔");
+        return false;
+    }
+
+    // Guardar datos
+    localStorage.setItem("usuario", user);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", pass);
+
+    // Guardar avatar como Base64
+    if (avatarFile) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            localStorage.setItem("avatar", e.target.result);
+            window.location.href = "login.html";
+        };
+        reader.readAsDataURL(avatarFile);
+    } else {
+        // Avatar por defecto
+        localStorage.setItem("avatar", "https://i.imgur.com/8QfQZ5K.png");
+        window.location.href = "login.html";
+    }
+
+    return false;
+}
+</script>
