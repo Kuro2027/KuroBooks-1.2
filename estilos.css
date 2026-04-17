@@ -215,3 +215,18 @@ a:hover {
 .dark-mode a {
     color: #d8a7ff;
 }
+.portada-box {
+    position: relative;
+    padding-top: 180px;
+}
+
+.portada-registro {
+    width: 260px;
+    border-radius: 20px;
+    border: 4px solid #ffb3e6;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
